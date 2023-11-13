@@ -41,14 +41,24 @@ class Dec2Hex
 
                 System.out.println("Converting the Decimal Value " + num + " to Hex...");
 
+
+                //Initilise a new instance of the StringBuilder method as reference 'bld'
+                StringBuilder bld =  new StringBuilder();
+
                 while(num != 0)
                 {   
                     rem=num%16;
-                    hexadecimal= ch[rem] + hexadecimal;
+
+                    //Append string to be the character of rem + hexadecimal 
+                    bld.append(ch[rem] + hexadecimal);
+
                     num= num/16;
                 }
 
-                System.out.println("Hexadecimal representation is: " + hexadecimal);
+                //Create new string to be = to the characters of the stringbuilder 
+                String str = bld.toString();
+
+                System.out.println("Hexadecimal representation is: " + str);
             } 
             //Error is caught, convert exception to string and print it
             catch (Exception e)
@@ -60,7 +70,6 @@ class Dec2Hex
 
     }
 }
-
 
 
 

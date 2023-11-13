@@ -15,7 +15,7 @@ class Dec2Hex
         arg1 = value;
     } 
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         
         //Checking if String array args is empty, if so, print error statement
@@ -31,7 +31,7 @@ class Dec2Hex
             {
                 //Call set method to set the parsed input value
                 setarg1(Integer.parseInt(args[0]));
-                char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+                char[] ch={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
                 int rem, num;
                 //Get the arg1 value from the Arg1 method
                 num = getarg1();
@@ -59,6 +59,8 @@ class Dec2Hex
 
     }
 }
+
+
 
 
 

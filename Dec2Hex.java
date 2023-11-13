@@ -1,5 +1,3 @@
-import java.util.Scanner;
-//Comment
 class Dec2Hex
 {
 

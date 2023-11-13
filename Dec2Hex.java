@@ -3,15 +3,16 @@ class Dec2Hex
 {
   
     //Add private access modifier to declaration so that the value cannot be accessed outwith the class
-    private static int Arg1 = 0;
+    //Following encapsulation principles
+    private static int arg1 = 0;
 
     //Declare getters and setters
-    public static int getArg1() {
-        return Arg1;
+    public static int getarg1() {
+        return arg1;
     }
 
-    public static void setArg1(int value) {
-        Arg1 = value;
+    public static void setarg1(int value) {
+        arg1 = value;
     } 
 
     public static void main(String args[])
@@ -29,11 +30,11 @@ class Dec2Hex
             try 
             {
                 //Call set method to set the parsed input value
-                setArg1(Integer.parseInt(args[0]));
+                setarg1(Integer.parseInt(args[0]));
                 char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
                 int rem, num;
                 //Get the arg1 value from the Arg1 method
-                num = getArg1();
+                num = getarg1();
                 String hexadecimal="";
 
 
@@ -58,5 +59,7 @@ class Dec2Hex
 
     }
 }
+
+
 
 

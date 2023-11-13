@@ -1,10 +1,22 @@
+
 class Dec2Hex
 {
+  
+    //Add private access modifier to declaration so that the value cannot be accessed outwith the class
+    private static int Arg1 = 0;
 
-    public static int Arg1;
-    //This is a test for git push to remote pos.
+    //Declare getters and setters
+    public static int getArg1() {
+        return Arg1;
+    }
+
+    public static void setArg1(int value) {
+        Arg1 = value;
+    } 
+
     public static void main(String args[])
     {
+        
         //Checking if String array args is empty, if so, print error statement
         if(args.length == 0)
         {
@@ -16,10 +28,12 @@ class Dec2Hex
             //Try normal conversion, if error is detected - print error in catch statement
             try 
             {
-                Arg1 = Integer.parseInt(args[0]);
+                //Call set method to set the parsed input value
+                setArg1(Integer.parseInt(args[0]));
                 char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
                 int rem, num;
-                num = 15;
+                //Get the arg1 value from the Arg1 method
+                num = getArg1();
                 String hexadecimal="";
 
 
@@ -44,3 +58,5 @@ class Dec2Hex
 
     }
 }
+
+

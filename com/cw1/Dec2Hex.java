@@ -1,5 +1,5 @@
 package com.cw1;
-class Dec2Hex {
+public class Dec2Hex {
     //Testing Testing Another Testing
     // Add private access modifier to declaration so that the value cannot be accessed outwith the class
     // Following encapsulation principles

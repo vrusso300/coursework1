@@ -1,5 +1,5 @@
-//Add package as directory reference to Dec2Hex class
 package com.cw1;
+
 class Dec2Hex
 {
   
@@ -25,7 +25,7 @@ class Dec2Hex
             System.out.println("Error: Please enter a denary value.");
         }
         //Else, run as normal
-        else
+        else if(args.length ==1)
         {   
             //Try normal conversion, if error is detected - print error in catch statement
             try 
@@ -68,10 +68,13 @@ class Dec2Hex
             }
             
         }
+        else
+        {
+            System.out.println("Must only be 1 value.");
+        }
 
     }
+   
 }
-
-
 
 

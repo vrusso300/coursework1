@@ -28,13 +28,15 @@ class Dec2Hex {
         while (num != 0) {   
             rem = num % 16;
 
-            // Append string to be the character of rem + hexadecimal 
+            // Append to be the pos of rem in ch collection
             bld.append(ch[rem]);
             num = num / 16;
         }
 
-        // Create new string to be = to the characters of the StringBuilder, return it 
+        // Create new string to be = to the characters of the StringBuilder and reverse it, return it 
         return bld.reverse().toString();
+
+        
     }
 
     public static void main(String[] args) {

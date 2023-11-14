@@ -33,11 +33,8 @@ class Dec2Hex {
             num = num / 16;
         }
 
-        // Create new string to be = to the characters of the StringBuilder 
-        String str = bld.reverse().toString();
-
-        // Return hexadecimal value
-        return str;
+        // Create new string to be = to the characters of the StringBuilder, return it 
+        return bld.reverse().toString();
     }
 
     public static void main(String[] args) {
